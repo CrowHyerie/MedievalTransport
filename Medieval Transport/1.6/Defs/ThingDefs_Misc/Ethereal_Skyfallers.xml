@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ShuttleSkyfallerBase">
+		<defName>Crows_AirshipShuttleIncoming</defName>
+		<label>airship shuttle (incoming)</label>
+		<thingClass>PassengerShuttleIncoming</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Vehicle/Airship</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(8,4)</drawSize>
+		</graphicData>
+		<size>(8,4)</size>
+		<skyfaller>
+			<anticipationSound>Shuttle_Landing</anticipationSound>
+			<anticipationSoundTicks>250</anticipationSoundTicks>
+			<ticksToImpactRange>200~250</ticksToImpactRange>
+			<shadowSize>(4.1,1.8)</shadowSize>
+			<rotationCurve>
+				<points>
+					<li>(0,30)</li>
+					<li>(0.5,5)</li>
+					<li>(0.9,-5)</li>
+					<li>(0.95,0)</li>
+				</points>
+			</rotationCurve>
+			<zPositionCurve>
+				<points>
+					<li>(0.95,2.5)</li>
+					<li>(1,0)</li>
+				</points>
+			</zPositionCurve>
+			<speedCurve>
+				<points>
+					<li>(0.2, 0.3)</li>
+					<li>(0.6, 0.4)</li>
+					<li>(0.95, 0.05)</li>
+				</points>
+			</speedCurve>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="ShuttleSkyfallerBase">
+		<defName>Crows_AirshipShuttleLeaving</defName>
+		<label>passenger shuttle (leaving)</label>
+		<thingClass>PassengerShuttleLeaving</thingClass>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Vehicle/Airship</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(8,4)</drawSize>
+		</graphicData>
+		<size>(8,4)</size>
+		<skyfaller>
+			<reversed>true</reversed>
+			<anticipationSound>Shuttle_Leaving</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>-40~-15</ticksToImpactRange>
+			<moteSpawnTime>0.05</moteSpawnTime>
+			<shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+			<shadowSize>(4.1,1.8)</shadowSize>
+			<motesPerCell>1</motesPerCell>
+			<rotationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.15,10)</li>
+					<li>(0.5,-5)</li>
+				</points>
+			</rotationCurve>
+			<zPositionCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.08,2)</li>
+				</points>
+			</zPositionCurve>
+			<speedCurve>
+				<points>
+					<li>(0.2, 0.3)</li>
+					<li>(0.6, 0.4)</li>
+					<li>(0.95, 0.05)</li>
+				</points>
+			</speedCurve>
+		</skyfaller>
+	</ThingDef>
+</Defs>
