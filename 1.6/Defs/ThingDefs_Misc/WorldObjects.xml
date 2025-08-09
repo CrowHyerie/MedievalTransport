@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorldObjectDef ParentName="ShuttleWorldObjectBase">
+		<defName>Crows_AirshipShuttleObject</defName>
+		<label>airship shuttle</label>
+		<description>An arship shuttle in flight.</description>
+		<expandingIconTexture>World/WorldObjects/Expanding/AirshipObject</expandingIconTexture>
+		<expandingIconDrawSize>1</expandingIconDrawSize>
+	</WorldObjectDef>
+</Defs>
